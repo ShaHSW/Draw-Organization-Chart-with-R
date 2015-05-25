@@ -27,7 +27,7 @@ drawOrgChart <- function(dataInput){
        edge.arrow.size=0.2, 
        edge.curved = F
   )
-  dev.copy(png,file='OrgChart.png'))
+  dev.copy(png,file='OrgChart.png')
   dev.off()
 }
 
