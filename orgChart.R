@@ -45,7 +45,7 @@ split_OrgChart <- function(df){
   for(i in 1:len){
     df_gf <- graph.data.frame(df_split[[i]],directed=T)
     plot(df_gf, 
-      main = c('Orgranizational Chart',paste('Cost Center No.',df_split[[i]][1,5])),
+      main = c('Orgranizational Chart',paste('Department:.',df_split[[i]][1,5])),
       edge.arrow.size=0.5, 
       edge.curved = F)
   dev.copy(png,file=paste('Department: ', df_split[[i]][1,5],'.png'))
