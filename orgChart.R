@@ -20,10 +20,6 @@ drawOrgChart <- function(dataInput){
   data_gf <- graph.data.frame(dataInput, directed = T)
   plot(data_gf,
        main = 'Organization Chart',
-       vertex.label = V(data_gf)$Title,
-       vertex.label.font = 15,
-       vertex.size = 15,
-       vertex.size2 = 30,
        edge.arrow.size=0.2, 
        edge.curved = F
   )
